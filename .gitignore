@@ -1,0 +1,14 @@
+# Exercism files
+.exercism
+
+# NPM files
+node_modules/
+
+# ES Lint files
+.eslintrc
+
+# Configs and other
+
+babel.config.js
+package-lock.json
+package.json
