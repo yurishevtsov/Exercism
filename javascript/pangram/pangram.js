@@ -1,8 +1,7 @@
-export function isPangram (input) {
-      const ALPHABET = "abcdefghijklmnopqrstuvwxyz";
-      input = input.toLowerCase();
-      for (let letter of ALPHABET) {
-        if (!input.includes(letter)) return false;
-      }
-      return true;
-    }
+export function isPangram(input, index = 0) {
+  const ABC = "abcdefghijklmnopqrstuvwxyz";
+  input = input.toLowerCase();
+  return (index === ABC.length) ? true
+  : !input.includes(ABC[index]) ? false
+  : isPangram(input, (index = index + 1));
+}
